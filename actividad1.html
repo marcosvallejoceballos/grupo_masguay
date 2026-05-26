@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 1 - Preparación del Entorno</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #0f172a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Actividad 1</h1>
+    <p>Preparación del Entorno</p>
+  </header>
+
+  <div class="container">
+
+    <section class="card">
+      <h2>¿De qué trata esta actividad?</h2>
+      <p>
+        Esta actividad consiste en preparar el entorno de trabajo instalando diferentes sistemas operativos y aplicaciones necesarias para las prácticas.
+      </p>
+
+      <p>
+        Se trabajó con Windows 11, Ubuntu Server y herramientas como Visual Studio Code, Cisco Packet Tracer y OCS Inventory.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>¿Qué hicimos?</h2>
+
+      <p>
+        Primero se creó un pendrive booteable utilizando Rufus para instalar Windows 11 en el ordenador asignado.
+      </p>
+
+      <p>
+        Después se preparó otro USB booteable con Ubuntu Server para instalarlo en una Raspberry o dispositivo Wyse.
+      </p>
+
+      <p>
+        Finalmente se descargaron e instalaron las aplicaciones necesarias para realizar las prácticas del curso.
+      </p>
+
+      <button onclick="mostrarMensaje()">Mostrar mensaje</button>
+
+      <p id="mensaje"></p>
+    </section>
+
+  </div>
+
+  <footer>
+    Actividad maquetada en HTML, CSS y JavaScript
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').innerHTML = 'La preparación del entorno se realizó correctamente.';
+    }
+  </script>
+
+</body>
+</html>
