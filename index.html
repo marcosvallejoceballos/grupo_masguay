@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice de Actividades</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #475569;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #2563eb;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+      color: #475569;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Proyecto de Actividades</h1>
+
+    <nav>
+      <a href="actividad1.html">Actividad 1</a>
+      <a href="actividad2.html">Actividad 2</a>
+      <a href="actividad3.html">Actividad 3</a>
+      <a href="actividad4.html">Actividad 4</a>
+      <a href="actividad5.html">Actividad 5</a>
+      <a href="actividad6.html">Actividad 6</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Índice Principal</h2>
+    <p>
+      Página principal con acceso a todas las actividades realizadas.
+    </p>
+  </section>
+
+  <section class="container">
+
+    <div class="card">
+      <h3>Actividad 1</h3>
+      <p>
+        Preparación del entorno instalando sistemas operativos y aplicaciones necesarias para las prácticas.
+      </p>
+      <a href="actividad1.html">Ver actividad</a>
+    </div>
+
+    <div class="card">
+      <h3>Actividad 2</h3>
+      <p>
+        Diseño y configuración de una red utilizando subnetting, VLANs, DHCP y Cisco Packet Tracer.
+      </p>
+      <a href="actividad2.html">Ver actividad</a>
+    </div>
+
+    <div class="card">
+      <h3>Actividad 3</h3>
+      <p>
+        Página reservada para la tercera actividad del proyecto.
+      </p>
+      <a href="actividad3.html">Ver actividad</a>
+    </div>
+
+    <div class="card">
+      <h3>Actividad 4</h3>
+      <p>
+        Página reservada para la cuarta actividad del proyecto.
+      </p>
+      <a href="actividad4.html">Ver actividad</a>
+    </div>
+
+    <div class="card">
+      <h3>Actividad 5</h3>
+      <p>
+        Página reservada para la quinta actividad del proyecto.
+      </p>
+      <a href="actividad5.html">Ver actividad</a>
+    </div>
+
+    <div class="card">
+      <h3>Actividad 6</h3>
+      <p>
+        Página reservada para la sexta actividad del proyecto.
+      </p>
+      <a href="actividad6.html">Ver actividad</a>
+    </div>
+
+  </section>
+
+  <footer>
+    Página principal del proyecto de actividades
+  </footer>
+
+  <script>
+    console.log('Página principal cargada correctamente');
+  </script>
+
+</body>
+</html>
