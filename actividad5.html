@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 - Apache</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+
+        <h1>Actividad 5 - Apache y FTP</h1>
+
+        <a href="../index.html" class="btn-volver">
+            ⬅ Volver al Inicio
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#apache">Apache</a></li>
+                <li><a href="#ftp">FTP</a></li>
+                <li><a href="#vsftpd">VSFTPD</a></li>
+                <li><a href="#conexion">Conexión</a></li>
+            </ul>
+
+            <button id="menu-btn">☰</button>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+        <h2>Documentación de prácticas Apache</h2>
+
+        <p>
+            Instalación, configuración y administración
+            de Apache y servicios FTP en Linux.
+        </p>
+    </div>
+</section>
+
+<section id="apache" class="section">
+    <div class="container">
+
+        <h2>Configuración Apache</h2>
+
+        <div class="card">
+            <h3>Actualizar servidor</h3>
+
+            <pre>
+sudo apt update
+sudo apt upgrade
+            </pre>
+        </div>
+
+        <div class="card">
+            <h3>Comprobar Apache</h3>
+
+            <pre>
+sudo systemctl status apache2
+            </pre>
+        </div>
+
+        <div class="card">
+            <h3>Habilitar Apache</h3>
+
+            <pre>
+sudo systemctl enable apache2
+            </pre>
+        </div>
+
+    </div>
+</section>
+
+<section id="ftp" class="section dark">
+    <div class="container">
+
+        <h2>Configuración FTP</h2>
+
+        <div class="card">
+            <h3>Editar directorio HTML</h3>
+
+            <pre>
+cd /var/www/html
+            </pre>
+        </div>
+
+        <div class="card">
+            <h3>Instalar VSFTPD</h3>
+
+            <pre>
+sudo apt install vsftpd
+            </pre>
+        </div>
+
+        <div class="card">
+            <h3>Comprobar servicio FTP</h3>
+
+            <pre>
+sudo systemctl status vsftpd
+            </pre>
+        </div>
+
+    </div>
+</section>
+
+<section id="vsftpd" class="section">
+    <div class="container">
+
+        <h2>Configuración VSFTPD</h2>
+
+        <div class="card">
+            <h3>Backup configuración</h3>
+
+            <pre>
+sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak
+            </pre>
+        </div>
+
+        <div class="card">
+            <h3>Reiniciar servicio</h3>
+
+            <pre>
+sudo systemctl restart vsftpd
+            </pre>
+        </div>
+
+        <div class="card">
+            <h3>Crear usuario FTP</h3>
+
+            <pre>
+sudo adduser usuarioftp
+            </pre>
+        </div>
+
+    </div>
+</section>
+
+<section id="conexion" class="section dark">
+    <div class="container">
+
+        <h2>Conexión Windows</h2>
+
+        <div class="card">
+            <p>
+                Conexión FTP desde Windows para transferencia
+                de archivos al servidor Linux.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>CampusFP - Actividad 5 Apache</p>
+        <p>Marcos V, Pablo V y Aleks Pesuela</p>
+    </div>
+</footer>
+
+<script src="script5.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6 - Investigación NAS</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+
+        <h1>Actividad 6 - Investigación NAS</h1>
+
+        <a href="../index.html" class="btn-volver">
+            ⬅ Volver al Inicio
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#nas">Sistemas NAS</a></li>
+                <li><a href="#backup">Backups</a></li>
+                <li><a href="#ftps">FTPS</a></li>
+                <li><a href="#recomendacion">Recomendaciones</a></li>
+            </ul>
+
+            <button id="menu-btn">☰</button>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+        <h2>Investigación NAS y FTPS</h2>
+
+        <p>
+            Investigación sobre sistemas operativos NAS,
+            copias de seguridad y aplicaciones FTPS.
+        </p>
+    </div>
+</section>
+
+<section id="nas" class="section">
+    <div class="container">
+
+        <h2>Sistemas Operativos NAS</h2>
+
+        <div class="card">
+            <h3>TrueNAS SCALE</h3>
+
+            <ul>
+                <li>ZFS y snapshots</li>
+                <li>Docker y máquinas virtuales</li>
+                <li>SMB, NFS y FTP</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>OpenMediaVault</h3>
+
+            <ul>
+                <li>Ligero y sencillo</li>
+                <li>Compatible con Docker</li>
+                <li>Ideal para Raspberry Pi</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Unraid</h3>
+
+            <ul>
+                <li>Virtualización</li>
+                <li>Interfaz amigable</li>
+                <li>Soporte Docker</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>XigmaNAS</h3>
+
+            <ul>
+                <li>Basado en FreeBSD</li>
+                <li>Muy ligero</li>
+                <li>Estable</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="backup" class="section dark">
+    <div class="container">
+
+        <h2>Copias de Seguridad</h2>
+
+        <div class="card">
+            <h3>Estrategia 3-2-1</h3>
+
+            <ul>
+                <li>3 copias de los datos</li>
+                <li>2 almacenamientos distintos</li>
+                <li>1 copia externa</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Snapshots</h3>
+
+            <p>
+                Recuperación rápida y protección
+                frente a ransomware.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rsync</h3>
+
+            <pre>
+rsync -avh /datos/ usuario@nas:/backup/
+            </pre>
+        </div>
+
+    </div>
+</section>
+
+<section id="ftps" class="section">
+    <div class="container">
+
+        <h2>Aplicaciones FTPS</h2>
+
+        <div class="card">
+            <h3>FileZilla</h3>
+
+            <p>
+                Cliente gratuito compatible con
+                FTPS y SFTP.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>WinSCP</h3>
+
+            <p>
+                Cliente Windows con automatización
+                y soporte SFTP.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cyberduck</h3>
+
+            <p>
+                Compatible con nube y WebDAV.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>VSFTPD</h3>
+
+            <pre>
+sudo apt install vsftpd -y
+            </pre>
+        </div>
+
+    </div>
+</section>
+
+<section id="recomendacion" class="section dark">
+    <div class="container">
+
+        <h2>Recomendaciones Finales</h2>
+
+        <div class="card">
+            <p>
+                Se recomienda utilizar SFTP en lugar
+                de FTPS por mayor seguridad.
+            </p>
+
+            <pre>
+sudo apt install openssh-server -y
+            </pre>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>CampusFP - Actividad 6 NAS</p>
+        <p>Marcos V., Alex P. y Pablo V.</p>
+    </div>
+</footer>
+
+<script src="script6.js"></script>
+
+</body>
+</html>
