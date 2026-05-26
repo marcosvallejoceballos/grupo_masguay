@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actividad 4 - Configuración de Dispositivos de Red</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color:#f2f2f2;
+}
+
+header{
+    background-color:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+h2{
+    color:#1e40af;
+}
+
+h3{
+    margin-top:25px;
+    color:#2563eb;
+}
+
+ul{
+    line-height:1.8;
+}
+
+.paso{
+    background-color:#e5e7eb;
+    padding:15px;
+    margin-top:10px;
+    border-radius:8px;
+}
+
+.boton{
+    margin-top:20px;
+}
+
+.boton a{
+    text-decoration:none;
+    background-color:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:5px;
+}
+
+.boton a:hover{
+    background-color:#1d4ed8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Actividad 4</h1>
+
+    <p>
+        Instalación y Configuración de Dispositivos de Red
+    </p>
+
+</header>
+
+<main>
+
+    <h2>
+        Configuración de Router y Switch
+    </h2>
+
+    <p>
+        Día 3 - 20 de mayo de 2026
+    </p>
+
+    <p>
+        Realizado por:
+        Pablo Villalvilla,
+        Marcos Vallejo y
+        Alejandro Pezuela.
+    </p>
+
+    <h3>Documentación de configuración de Router</h3>
+
+    <div class="paso">
+        <strong>Paso 1:</strong>
+        Crear las interfaces VLAN desde:
+        Interfaces → VLAN → +
+    </div>
+
+    <ul>
+        <li>Name: vlan11</li>
+        <li>VLAN ID: 11</li>
+        <li>Interface: bridge-local</li>
+    </ul>
+
+    <div class="paso">
+        <strong>Paso 2:</strong>
+        Asignar direcciones IP a la VLAN.
+    </div>
+
+    <ul>
+        <li>Ruta: IP → Addresses → +</li>
+        <li>Address: 172.16.0.1/20</li>
+        <li>Interface: vlan10-equipo</li>
+    </ul>
+
+    <div class="paso">
+        <strong>Paso 3:</strong>
+        Configurar el servidor DHCP.
+    </div>
+
+    <ul>
+        <li>Ruta: IP → DHCP Server → DHCP Setup</li>
+        <li>Seleccionar interfaz VLAN</li>
+        <li>Definir DHCP Address Space</li>
+        <li>Definir Gateway</li>
+        <li>Definir rango de direcciones</li>
+        <li>Configurar DNS</li>
+        <li>Configurar Lease Time</li>
+    </ul>
+
+    <p>
+        Verificación DHCP completada correctamente.
+    </p>
+
+    <div class="paso">
+        <strong>Paso 4:</strong>
+        Configurar el Bridge (Puerto Trunk).
+    </div>
+
+    <ul>
+        <li>Ruta: Bridge → VLANs</li>
+        <li>Abrir configuración VLAN del Bridge</li>
+        <li>Configurar VLAN 10</li>
+        <li>Tagged: bridge, ether4</li>
+    </ul>
+
+    <p>
+        Verificación final correcta.
+    </p>
+
+    <h3>Documentación de configuración de Switch</h3>
+
+    <ul>
+        <li>Añadir VLAN 11</li>
+        <li>Seleccionar los puertos necesarios</li>
+        <li>Pulsar en “save” para guardar la configuración</li>
+    </ul>
+
+    <div class="boton">
+
+        <a href="index.html">
+            Volver al Inicio
+        </a>
+
+    </div>
+
+</main>
+
+</body>
+</html>
