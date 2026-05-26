@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 2 - Diseño y Configuración de Red</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #0f172a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Actividad 2</h1>
+    <p>Diseño y Configuración de Red</p>
+  </header>
+
+  <div class="container">
+
+    <section class="card">
+      <h2>¿De qué trata esta actividad?</h2>
+      <p>
+        En esta actividad se trabajó el diseño y la configuración de una red informática utilizando subnetting, VLANs y dispositivos de red en Cisco Packet Tracer.
+      </p>
+
+      <p>
+        También se realizó un inventario de hardware utilizando una herramienta de software libre para enviar la información a un servidor.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>¿Qué hicimos?</h2>
+
+      <p>
+        Primero se calcularon y documentaron las subredes necesarias partiendo de la dirección IP 172.16.0.0/16.
+      </p>
+
+      <p>
+        Después se diseñó una topología funcional en Cisco Packet Tracer utilizando un router, tres switches, un PC y un servidor para cada equipo.
+      </p>
+
+      <p>
+        También se configuraron las VLANs y el servicio DHCP en el router para asignar direcciones IP automáticamente.
+      </p>
+
+      <p>
+        Finalmente se utilizó una herramienta de software libre para realizar un inventario de hardware y enviar los datos al servidor.
+      </p>
+
+      <button onclick="mostrarMensaje()">Mostrar resumen</button>
+
+      <p id="mensaje"></p>
+    </section>
+
+  </div>
+
+  <footer>
+    Actividad maquetada en HTML, CSS y JavaScript
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').innerHTML = 'La preparación del entorno se realizó correctamente.';
+    }
+  </script>
+
+</body>
+</html>
