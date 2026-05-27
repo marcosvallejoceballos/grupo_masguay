@@ -6,6 +6,7 @@
   <title>Actividad 1 - Preparación del Entorno</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -24,11 +25,40 @@
       color: white;
       text-align: center;
       padding: 60px 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+    }
+
+    header p {
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: rgba(255,255,255,0.1);
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      font-weight: bold;
+      backdrop-filter: blur(5px);
+    }
+
+    nav a:hover {
+      background: #2563eb;
+      transform: translateY(-3px);
     }
 
     .container {
@@ -80,19 +110,35 @@
       padding: 30px;
       color: #64748b;
     }
+
   </style>
 </head>
+
 <body>
 
   <header>
+
     <h1>Actividad 1</h1>
+
     <p>Preparación del Entorno</p>
+
+    <nav>
+      <a href="actividad1.html">Actividad 1</a>
+      <a href="actividad2.html">Actividad 2</a>
+      <a href="actividad3.html">Actividad 3</a>
+      <a href="actividad4.html">Actividad 4</a>
+      <a href="actividad5.html">Actividad 5</a>
+      <a href="actividad6.html">Actividad 6</a>
+    </nav>
+
   </header>
 
   <div class="container">
 
     <section class="card">
+
       <h2>¿De qué trata esta actividad?</h2>
+
       <p>
         Esta actividad consiste en preparar el entorno de trabajo instalando diferentes sistemas operativos y aplicaciones necesarias para las prácticas.
       </p>
@@ -100,9 +146,11 @@
       <p>
         Se trabajó con Windows 11, Ubuntu Server y herramientas como Visual Studio Code, Cisco Packet Tracer y OCS Inventory.
       </p>
+
     </section>
 
     <section class="card">
+
       <h2>¿Qué hicimos?</h2>
 
       <p>
@@ -117,15 +165,20 @@
         Finalmente se descargaron e instalaron las aplicaciones necesarias para realizar las prácticas del curso.
       </p>
 
-      <button onclick="mostrarMensaje()">Mostrar mensaje</button>
+      <button onclick="mostrarMensaje()">
+        Mostrar mensaje
+      </button>
 
       <p id="mensaje"></p>
+
     </section>
 
     <div style="text-align:center; margin-bottom:40px;">
+
       <a href="index.html">
         <button>Volver al índice</button>
       </a>
+
     </div>
 
   </div>
@@ -135,9 +188,14 @@
   </footer>
 
   <script>
+
     function mostrarMensaje() {
-      document.getElementById('mensaje').innerHTML = 'La preparación del entorno se realizó correctamente.';
+
+      document.getElementById('mensaje').innerHTML =
+      'La preparación del entorno se realizó correctamente.';
+
     }
+
   </script>
 
 </body>
