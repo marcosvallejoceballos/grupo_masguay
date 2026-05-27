@@ -6,6 +6,7 @@
   <title>Actividad 2 - Diseño y Configuración de Red</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -24,11 +25,43 @@
       color: white;
       text-align: center;
       padding: 60px 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+    }
+
+    header p {
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: rgba(255,255,255,0.1);
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    nav a:hover {
+      background: #2563eb;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(37,99,235,0.4);
     }
 
     .container {
@@ -80,18 +113,33 @@
       padding: 30px;
       color: #64748b;
     }
+
   </style>
 </head>
+
 <body>
 
   <header>
+
     <h1>Actividad 2</h1>
+
     <p>Diseño y Configuración de Red</p>
+
+    <nav>
+      <a href="actividad1.html">Actividad 1</a>
+      <a href="actividad2.html">Actividad 2</a>
+      <a href="actividad3.html">Actividad 3</a>
+      <a href="actividad4.html">Actividad 4</a>
+      <a href="actividad5.html">Actividad 5</a>
+      <a href="actividad6.html">Actividad 6</a>
+    </nav>
+
   </header>
 
   <div class="container">
 
     <section class="card">
+
       <h2>¿De qué trata esta actividad?</h2>
 
       <p>
@@ -101,9 +149,11 @@
       <p>
         También se realizó un inventario de hardware utilizando una herramienta de software libre para enviar la información a un servidor.
       </p>
+
     </section>
 
     <section class="card">
+
       <h2>¿Qué hicimos?</h2>
 
       <p>
@@ -122,15 +172,20 @@
         Finalmente se utilizó una herramienta de software libre para realizar un inventario de hardware y enviar los datos al servidor.
       </p>
 
-      <button onclick="mostrarMensaje()">Mostrar resumen</button>
+      <button onclick="mostrarMensaje()">
+        Mostrar resumen
+      </button>
 
       <p id="mensaje"></p>
+
     </section>
 
     <div style="text-align:center; margin-bottom:40px;">
+
       <a href="index.html">
         <button>Volver al índice</button>
       </a>
+
     </div>
 
   </div>
@@ -140,9 +195,14 @@
   </footer>
 
   <script>
+
     function mostrarMensaje() {
-      document.getElementById('mensaje').innerHTML = 'La topología de red y la configuración se realizaron correctamente.';
+
+      document.getElementById('mensaje').innerHTML =
+      'La topología de red y la configuración se realizaron correctamente.';
+
     }
+
   </script>
 
 </body>
