@@ -1,200 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 6 - Investigación NAS</title>
-    <link rel="stylesheet" href="style6.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 6 - Investigación NAS</title>
+
+  <link rel="stylesheet" href="style6.css">
 </head>
 <body>
 
 <header>
-    <div class="container">
 
-        <h1>Actividad 6 - Investigación NAS</h1>
+  <h1>Actividad 6</h1>
 
-        <a href="../index.html" class="btn-volver">
-            ⬅ Volver al Inicio
-        </a>
+  <div class="menu-toggle">☰</div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#nas">Sistemas NAS</a></li>
-                <li><a href="#backup">Backups</a></li>
-                <li><a href="#ftps">FTPS</a></li>
-                <li><a href="#recomendacion">Recomendaciones</a></li>
-            </ul>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="actividad1.html">Actividad 1</a>
+    <a href="actividad2.html">Actividad 2</a>
+    <a href="actividad3.html">Actividad 3</a>
+    <a href="actividad4.html">Actividad 4</a>
+    <a href="actividad5.html">Actividad 5</a>
+    <a href="actividad6.html">Actividad 6</a>
+  </nav>
 
-            <button id="menu-btn">☰</button>
-        </nav>
-
-    </div>
 </header>
 
-<main>
-
 <section class="hero">
-    <div class="container">
-        <h2>Investigación NAS y FTPS</h2>
 
-        <p>
-            Investigación sobre sistemas operativos NAS,
-            copias de seguridad y aplicaciones FTPS.
-        </p>
-    </div>
+  <h2>Investigación NAS y FTPS</h2>
+
+  <p>
+    Sistemas NAS, copias de seguridad
+    y aplicaciones FTPS.
+  </p>
+
 </section>
 
-<section id="nas" class="section">
-    <div class="container">
+<section class="container">
 
-        <h2>Sistemas Operativos NAS</h2>
+  <div class="card">
 
-        <div class="card">
-            <h3>TrueNAS SCALE</h3>
+    <h3>TrueNAS SCALE</h3>
 
-            <ul>
-                <li>ZFS y snapshots</li>
-                <li>Docker y máquinas virtuales</li>
-                <li>SMB, NFS y FTP</li>
-            </ul>
-        </div>
+    <ul>
+      <li>ZFS y snapshots</li>
+      <li>Docker y virtualización</li>
+      <li>SMB, NFS y FTP</li>
+    </ul>
 
-        <div class="card">
-            <h3>OpenMediaVault</h3>
+  </div>
 
-            <ul>
-                <li>Ligero y sencillo</li>
-                <li>Compatible con Docker</li>
-                <li>Ideal para Raspberry Pi</li>
-            </ul>
-        </div>
+  <div class="card">
 
-        <div class="card">
-            <h3>Unraid</h3>
+    <h3>OpenMediaVault</h3>
 
-            <ul>
-                <li>Virtualización</li>
-                <li>Interfaz amigable</li>
-                <li>Soporte Docker</li>
-            </ul>
-        </div>
+    <ul>
+      <li>Ligero</li>
+      <li>Compatible Docker</li>
+      <li>Ideal Raspberry Pi</li>
+    </ul>
 
-        <div class="card">
-            <h3>XigmaNAS</h3>
+  </div>
 
-            <ul>
-                <li>Basado en FreeBSD</li>
-                <li>Muy ligero</li>
-                <li>Estable</li>
-            </ul>
-        </div>
+  <div class="card">
 
-    </div>
-</section>
+    <h3>Unraid</h3>
 
-<section id="backup" class="section dark">
-    <div class="container">
+    <ul>
+      <li>Virtualización</li>
+      <li>Interfaz amigable</li>
+      <li>Flexible</li>
+    </ul>
 
-        <h2>Copias de Seguridad</h2>
+  </div>
 
-        <div class="card">
-            <h3>Estrategia 3-2-1</h3>
+  <div class="card">
 
-            <ul>
-                <li>3 copias de los datos</li>
-                <li>2 almacenamientos distintos</li>
-                <li>1 copia externa</li>
-            </ul>
-        </div>
+    <h3>XigmaNAS</h3>
 
-        <div class="card">
-            <h3>Snapshots</h3>
+    <ul>
+      <li>Basado en FreeBSD</li>
+      <li>Muy ligero</li>
+      <li>Estable</li>
+    </ul>
 
-            <p>
-                Recuperación rápida y protección
-                frente a ransomware.
-            </p>
-        </div>
+  </div>
 
-        <div class="card">
-            <h3>Rsync</h3>
+  <div class="card">
 
-            <pre>
+    <h3>Estrategia 3-2-1</h3>
+
+    <ul>
+      <li>3 copias de los datos</li>
+      <li>2 tipos de almacenamiento</li>
+      <li>1 copia externa o nube</li>
+    </ul>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Snapshots</h3>
+
+    <p>
+      Recuperación rápida de archivos y protección
+      frente a ransomware.
+    </p>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Rsync</h3>
+
+    <pre>
 rsync -avh /datos/ usuario@nas:/backup/
-            </pre>
-        </div>
+    </pre>
 
-    </div>
-</section>
+  </div>
 
-<section id="ftps" class="section">
-    <div class="container">
+  <div class="card">
 
-        <h2>Aplicaciones FTPS</h2>
+    <h3>FileZilla Client</h3>
 
-        <div class="card">
-            <h3>FileZilla</h3>
+    <p>
+      Cliente compatible con FTPS y SFTP.
+    </p>
 
-            <p>
-                Cliente gratuito compatible con
-                FTPS y SFTP.
-            </p>
-        </div>
+  </div>
 
-        <div class="card">
-            <h3>WinSCP</h3>
+  <div class="card">
 
-            <p>
-                Cliente Windows con automatización
-                y soporte SFTP.
-            </p>
-        </div>
+    <h3>WinSCP</h3>
 
-        <div class="card">
-            <h3>Cyberduck</h3>
+    <p>
+      Cliente Windows con automatización.
+    </p>
 
-            <p>
-                Compatible con nube y WebDAV.
-            </p>
-        </div>
+  </div>
 
-        <div class="card">
-            <h3>VSFTPD</h3>
+  <div class="card">
 
-            <pre>
+    <h3>Cyberduck</h3>
+
+    <p>
+      Compatible con nube y WebDAV.
+    </p>
+
+  </div>
+
+  <div class="card">
+
+    <h3>VSFTPD</h3>
+
+    <pre>
 sudo apt install vsftpd -y
-            </pre>
-        </div>
+    </pre>
 
-    </div>
-</section>
+  </div>
 
-<section id="recomendacion" class="section dark">
-    <div class="container">
+  <div class="card">
 
-        <h2>Recomendaciones Finales</h2>
+    <h3>SFTP en Ubuntu</h3>
 
-        <div class="card">
-            <p>
-                Se recomienda utilizar SFTP en lugar
-                de FTPS por mayor seguridad.
-            </p>
-
-            <pre>
+    <pre>
 sudo apt install openssh-server -y
-            </pre>
-        </div>
+    </pre>
 
-    </div>
+  </div>
+
 </section>
-
-</main>
 
 <footer>
-    <div class="container">
-        <p>CampusFP - Actividad 6 NAS</p>
-        <p>Marcos V., Alex P. y Pablo V.</p>
-    </div>
+  Actividad 6 - CampusFP
 </footer>
 
 <script src="script6.js"></script>
